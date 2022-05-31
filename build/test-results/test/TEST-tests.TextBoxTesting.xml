@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.TextBoxTesting" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-30T15:15:27" hostname="DESKTOP-8SOTK3A" time="14.067">
+<testsuite name="tests.TextBoxTesting" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-30T18:26:53" hostname="DESKTOP-8SOTK3A" time="19.641">
   <properties/>
-  <testcase name="successfulTest()" classname="tests.TextBoxTesting" time="14.067"/>
+  <testcase name="successfulTest()" classname="tests.TextBoxTesting" time="19.641"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\Андрей\IdeaProjects\qa_guru\demoqa_qa_13\build\downloads\1653923728011_19084_1
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\Андрей\IdeaProjects\qa_guru\demoqa_qa_13\build\downloads\1653935213907_16596_1
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Андрей\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
 [Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
-Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 53200
+Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 58249
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-мая 30, 2022 6:15:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+мая 30, 2022 9:26:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
 [Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
-мая 30, 2022 6:15:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+мая 30, 2022 9:27:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 102, so returning the closest version found: 101
-мая 30, 2022 6:15:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+мая 30, 2022 9:27:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 102 of 101
 [Test worker] INFO com.codeborne.selenide.webdriver.BrowserResizer - Set browser size to 1820x980
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=102.0.5005.62 Platform=WINDOWS
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 6.5.0
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.1.4 build revision: 535d840ee2
-[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (59c88306a6041474f768a2753402e8bd)
-[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - Browser and proxy will stay open due to holdBrowserOpen=true: 1 -> ChromeDriver: chrome on WINDOWS (59c88306a6041474f768a2753402e8bd), null
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (7894e8ef8f598518a5da41d522ead040)
+[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - Browser and proxy will stay open due to holdBrowserOpen=true: 1 -> ChromeDriver: chrome on WINDOWS (7894e8ef8f598518a5da41d522ead040), null
 ]]></system-err>
 </testsuite>
