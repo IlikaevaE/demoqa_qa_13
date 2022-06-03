@@ -2,6 +2,7 @@ package tests;
 
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -17,11 +18,13 @@ public class TextBoxTesting {
     static void beforeAll() {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1820x980";
-        Configuration.holdBrowserOpen = true;
+      //  Configuration.holdBrowserOpen = true;
     }
 
     @Test
     void successfulTest() {
+        String firstName = "Alex";
+        String lastName = "Fischer";
         open("/automation-practice-form");
         executeJavaScript("$('footer').remove()");
         executeJavaScript("$('#fixedban').remove()");
@@ -49,8 +52,7 @@ public class TextBoxTesting {
 
         $("[id=currentAddress]").setValue("Bremen Street, 14");
 
-        $("#react-select-3-input").setValue("Haryana");
-        $("#react-select-3-input").pressEnter();
+        $("#react-select-3-input").setValue("Haryana").pressEnter();
 
         $("#react-select-4-input").setValue("Karnal");
         $("#react-select-4-input").pressEnter();
@@ -74,6 +76,7 @@ public class TextBoxTesting {
                 text("Haryana"),
                 text("Karnal")
         );
+        Selenide.sleep(5000);
 
     }
 
