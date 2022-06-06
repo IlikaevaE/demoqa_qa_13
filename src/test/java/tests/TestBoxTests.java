@@ -1,37 +1,34 @@
 package tests;
 
-
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import java.io.File;
-
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
 
-public class TextBoxTesting {
-
+public class TestBoxTests extends TestBase{
     @BeforeAll
     static void beforeAll() {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1820x980";
-      //  Configuration.holdBrowserOpen = true;
+        //  Configuration.holdBrowserOpen = true;
     }
 
     @Test
     void successfulTest() {
-        String firstName = "Alex";
+        String firstName = "Sandra";
         String lastName = "Fischer";
         open("/automation-practice-form");
         executeJavaScript("$('footer').remove()");
         executeJavaScript("$('#fixedban').remove()");
 
 
-        $("[id=firstName]").setValue("Sandra");
-        $("[id=lastName]").setValue("Fischer");
+        $("[id=firstName]").setValue(firstName);
+        $("[id=lastName]").setValue(lastName);
         $("[id=userEmail]").setValue("sandra@gmail.com");
         $(byText("Female")).click();
         $("[id =userNumber]").setValue("8952658963");
@@ -79,6 +76,4 @@ public class TextBoxTesting {
         Selenide.sleep(5000);
 
     }
-
-
 }
