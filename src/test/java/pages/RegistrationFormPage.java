@@ -1,14 +1,12 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import org.junit.jupiter.api.Disabled;
 import pages.components.CalenderComponent;
 import pages.components.ResultsTableComponent;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.Selenide.executeJavaScript;
 
 public class RegistrationFormPage {
     CalenderComponent calenderComponent = new CalenderComponent();
