@@ -1,15 +1,7 @@
 package tests;
 
-import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Test;
-import pages.RegistrationFormPage;
-
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
 import static tests.TestData.*;
-import static utils.RandomUtils.getRandomGender;
-import static utils.RandomUtils.getRandomHobby;
 
 public class RegistrationFormWithPageObjectsTests extends TestBase {
     @Test
