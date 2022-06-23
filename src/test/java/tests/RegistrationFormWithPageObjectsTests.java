@@ -8,12 +8,12 @@ import static tests.TestData.*;
 
 public class RegistrationFormWithPageObjectsTests extends TestBase {
     @Test
-    @DisplayName("Заполняем форму регистрации")
+    @DisplayName("Fill in the registration form")
     void successfulTest() {
-        step("Открываем форму регистрации", () -> {
+        step("Open the registration form", () -> {
             registrationFormPage.openPage();
         });
-        step("Заполняем необходимые поля", () -> {
+        step("Fill in the needed fields", () -> {
             registrationFormPage
                     .setFirstName(FIRST_NAME)
                     .setLastName(LAST_NAME)
@@ -29,7 +29,7 @@ public class RegistrationFormWithPageObjectsTests extends TestBase {
                     .setCity(CITY)
                     .clickSubmit(SUBMIT_VALUE);
         });
-        step("Проверяем результат", () -> {
+        step("Check the results", () -> {
             registrationFormPage
                     .checkResult("Student Name", FIRST_NAME + " " + LAST_NAME)
                     .checkResult("Student Email", EMAIL)
