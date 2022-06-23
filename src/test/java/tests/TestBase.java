@@ -16,12 +16,11 @@ public class TestBase {
         SelenideLogger.addListener("allure", new AllureSelenide());
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1820x980";
-        //  Configuration.holdBrowserOpen = true;
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
     }
     @AfterEach
      void afterEach() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
-        Attach attach = new Attach();
+
         Attach.takeScreenshot("Last screenshot");
         Attach.browserConsoleLogs();
         Attach.pageSource();
