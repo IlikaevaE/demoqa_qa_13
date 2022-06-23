@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'io.qameta.allure' version '2.9.6'
+    id 'io.qameta.allure' version '2.10.0'
 }
 
 repositories {
@@ -32,20 +32,9 @@ dependencies {
             'com.github.javafaker:javafaker:1.0.2',
             'com.codeborne:selenide:6.6.4',
             'io.qameta.allure:allure-selenide:2.18.1',
-            'org.slf4j:slf4j-simple:1.7.30',
+            'org.slf4j:slf4j-simple:1.7.30'
     )
-
-
-
-
 }
-tasks.withType(Test) {
+test {
     useJUnitPlatform()
-
-    testLogging {
-        lifecycle {
-            events "started", "skipped", "failed", "standard_error", "standard_out"
-            exceptionFormat "short"
-        }
-    }
 }

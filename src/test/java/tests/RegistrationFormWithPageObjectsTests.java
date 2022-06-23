@@ -8,6 +8,7 @@ import static io.qameta.allure.Allure.step;
 import static tests.TestData.*;
 
 public class RegistrationFormWithPageObjectsTests extends TestBase {
+
     @Test
     @DisplayName("Fill in the registration form")
     void successfulTest() {
