@@ -20,6 +20,8 @@ public class TestBase {
     }
     @AfterEach
      void afterEach() {
+        SelenideLogger.addListener("allure", new AllureSelenide());
+        Attach attach = new Attach();
         Attach.takeScreenshot("Last screenshot");
         Attach.browserConsoleLogs();
         Attach.pageSource();

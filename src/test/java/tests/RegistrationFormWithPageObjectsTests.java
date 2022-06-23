@@ -10,11 +10,9 @@ public class RegistrationFormWithPageObjectsTests extends TestBase {
     @Test
     @DisplayName("Fill in the registration form")
     void successfulTest() {
-        step("Open the registration form", () -> {
-            registrationFormPage.openPage();
-        });
-        step("Fill in the needed fields", () -> {
+
             registrationFormPage
+                    .openPage()
                     .setFirstName(FIRST_NAME)
                     .setLastName(LAST_NAME)
                     .setUserEmail(EMAIL)
@@ -28,8 +26,8 @@ public class RegistrationFormWithPageObjectsTests extends TestBase {
                     .setState(STATE)
                     .setCity(CITY)
                     .clickSubmit(SUBMIT_VALUE);
-        });
-        step("Check the results", () -> {
+
+
             registrationFormPage
                     .checkResult("Student Name", FIRST_NAME + " " + LAST_NAME)
                     .checkResult("Student Email", EMAIL)
@@ -41,7 +39,6 @@ public class RegistrationFormWithPageObjectsTests extends TestBase {
                     .checkResult("Picture", ATTACHMENT)
                     .checkResult("Address", ADDRESS)
                     .checkResult("State and City", STATE + " " + CITY);
-        });
 
 
     }
