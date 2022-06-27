@@ -32,7 +32,7 @@ dependencies {
             'com.github.javafaker:javafaker:1.0.2',
             'com.codeborne:selenide:6.6.4',
             'io.qameta.allure:allure-selenide:2.18.1',
-            'org.slf4j:slf4j-simple:1.7.30'
+            'org.slf4j:slf4j-simple:1.7.36'
     )
 }
 test {
