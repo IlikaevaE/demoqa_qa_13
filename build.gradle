@@ -27,14 +27,24 @@ allure {
     }
 }
 dependencies {
-    testImplementation (
+    testImplementation(
             'org.junit.jupiter:junit-jupiter:5.8.2',
             'com.github.javafaker:javafaker:1.0.2',
             'com.codeborne:selenide:6.6.4',
             'io.qameta.allure:allure-selenide:2.18.1',
-            'org.slf4j:slf4j-simple:1.7.36'
+            'org.slf4j:slf4j-simple:1.7.32'
     )
 }
-test {
+
+tasks.withType(Test) {
+
     useJUnitPlatform()
+
+    testLogging {
+        lifecycle {
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "short"
+        }
+    }
 }
+
