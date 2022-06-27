@@ -2,9 +2,7 @@ package tests;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pages.RegistrationFormPage;
 
-import static io.qameta.allure.Allure.step;
 import static tests.TestData.*;
 
 public class RegistrationFormWithPageObjectsTests extends TestBase {
