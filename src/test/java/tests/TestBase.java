@@ -1,4 +1,5 @@
 package tests;
+
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import config.CredentialsConfig;
@@ -27,8 +28,7 @@ public class TestBase {
         Configuration.browser = System.getProperty("browser");
         Configuration.browserVersion = System.getProperty("browserVersion");
         Configuration.browserSize = System.getProperty("browserSize");
-       Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
-      // Configuration.remote = String.format("https://%s:%s@%s",config.login(), config.password(), config.remoteWD());
+        Configuration.remote = String.format("https://%s:%s@%s", config.login(), config.password(), config.remoteWD());
 
 
     }
