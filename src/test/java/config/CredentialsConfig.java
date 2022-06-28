@@ -7,5 +7,5 @@ public interface CredentialsConfig extends Config {
     String baseURL();
     String login();
     String password();
-    String remoteWebDriver();
+    String remoteWD();
 }
