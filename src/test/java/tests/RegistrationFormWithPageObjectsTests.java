@@ -1,6 +1,7 @@
 package tests;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static tests.TestData.*;
@@ -8,6 +9,7 @@ import static tests.TestData.*;
 public class RegistrationFormWithPageObjectsTests extends TestBase {
 
     @Test
+    @Tag("owner_reg")
     @DisplayName("Fill in the registration form")
     void successfulTest() {
         registrationFormPage

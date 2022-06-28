@@ -48,15 +48,15 @@ tasks.withType(Test) {
         }
     }
 }
-task properties_test6(type: Test) {
-    useJUnitPlatform{
-        includeTags "test6"
-    }
-}
+//task properties_test6(type: Test) {
+//    useJUnitPlatform{
+//        includeTags "test6"
+//    }
+//}
 
 task owner_test(type: Test) {
     useJUnitPlatform{
-        includeTags "owner"
+        includeTags "owner_reg"
     }
 }
 
