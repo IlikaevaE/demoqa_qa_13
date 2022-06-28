@@ -54,7 +54,7 @@ task properties_test6(type: Test) {
     }
 }
 
-task owner_task(type: Test) {
+task owner_test(type: Test) {
     useJUnitPlatform{
         includeTags "owner"
     }
