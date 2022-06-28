@@ -31,6 +31,7 @@ dependencies {
             'org.junit.jupiter:junit-jupiter:5.8.2',
             'com.github.javafaker:javafaker:1.0.2',
             'com.codeborne:selenide:6.6.4',
+            'org.aeonbits.owner:owner:1.0.12',
             'io.qameta.allure:allure-selenide:2.18.1',
             'org.slf4j:slf4j-simple:1.7.32'
     )
@@ -52,9 +53,10 @@ task properties_test6(type: Test) {
         includeTags "test6"
     }
 }
-task hello_test(type: Test) {
+
+task owner_task(type: Test) {
     useJUnitPlatform{
-        includeTags "hello"
+        includeTags "owner"
     }
 }
 
