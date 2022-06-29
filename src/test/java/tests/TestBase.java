@@ -25,10 +25,10 @@ public class TestBase {
 
         Configuration.browserCapabilities = capabilities;
         Configuration.baseUrl = config.baseURL();
-        Configuration.browser = System.getProperty("browser");
-        Configuration.browserVersion = System.getProperty("browserVersion");
+       // Configuration.browser = System.getProperty("browser");
+       // Configuration.browserVersion = System.getProperty("browserVersion");
         Configuration.browserSize = System.getProperty("browserSize");
-        Configuration.remote = String.format("https://%s:%s@%s", config.login(), config.password(), config.remoteWD());
+       // Configuration.remote = String.format("https://%s:%s@%s", config.login(), config.password(), config.remoteWD());
 
 
     }
